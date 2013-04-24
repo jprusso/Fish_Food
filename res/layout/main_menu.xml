@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="600dp"
+    android:background="#800000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Fish Food"
+        android:textColor="#FFD700"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/menu_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="14dp"
+        android:text="Weekly Menus"
+        android:textColor="#FFD700"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/calculator_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/menu_label"
+        android:layout_alignBottom="@+id/menu_label"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="33dp"
+        android:text="Meal Calculator"
+        android:textColor="#FFD700"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menu_label"
+        android:layout_below="@+id/menu_label"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/menu_button"
+        android:background="@drawable/menu_drawable" />
+
+    <ImageView
+        android:id="@+id/calculator_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/calculator_label"
+        android:layout_below="@+id/calculator_label"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/calculator_button"
+        android:background="@drawable/calcululator_drawable" />
+
+    <TextView
+        android:id="@+id/hours_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menu_button"
+        android:layout_below="@+id/menu_button"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Dining Hours"
+        android:textColor="#FFD700"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/order_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hours_label"
+        android:layout_alignBottom="@+id/hours_label"
+        android:layout_alignLeft="@+id/calculator_label"
+        android:text="Order Bag Lunch"
+        android:textColor="#FFD700"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/clock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/menu_button"
+        android:layout_below="@+id/hours_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/clock_button"
+        android:background="@drawable/hours_drawable"  />
+
+    <ImageView
+        android:id="@+id/bag_lunch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/calculator_label"
+        android:layout_alignTop="@+id/clock_button"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/bag_lunch_button"
+        android:background="@drawable/baglunch_drawable"  />
+
+    <TextView
+        android:id="@+id/mealplan_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/contact_label"
+        android:layout_alignBottom="@+id/contact_label"
+        android:layout_alignLeft="@+id/order_label"
+        android:text="Meal Plan Info"
+        android:textColor="#FFD700"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hours_label"
+        android:layout_below="@+id/clock_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Contact"
+        android:textColor="#FFD700"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/contact_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/clock_button"
+        android:layout_below="@+id/contact_label"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/contact_button"
+        android:background="@drawable/contact_drawable"  />
+
+    <ImageView
+        android:id="@+id/meal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mealplan_label"
+        android:layout_alignTop="@+id/contact_button"
+        android:src="@drawable/meal_info_button" 
+        android:background="@drawable/mealinfo_drawable" />
+
+    <ImageButton
+        android:id="@+id/twitter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/contact_button"
+        android:layout_below="@+id/contact_button"
+        android:layout_alignTop="@+id/twitter_button"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/twitter"
+        android:background="@drawable/twitter_drawable"  />
+
+    <ImageButton
+        android:id="@+id/facebook_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bag_lunch_button"
+        android:layout_alignTop="@+id/twitter_button"
+        android:src="@drawable/facebook"
+        android:background="@drawable/facebook_drawable"  />
+
+</RelativeLayout>
+</ScrollView>
